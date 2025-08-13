@@ -1,37 +1,70 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# ------------------------------
+# Node / npm
+# ------------------------------
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Expo
+# ------------------------------
+# Expo / React Native
+# ------------------------------
 .expo/
-dist/
+.expo-shared/
 web-build/
-expo-env.d.ts
+dist/
+build/
+*.bundle
+*.map
+*.tmp
+*.log
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# Metro bundler cache
+.expo/
+.expo-shared/
+metro-cache/
+.expo/web-cache/
 
-# Metro
-.metro-health-check*
+# React Native Packager
+.packager/
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
+# ------------------------------
+# TypeScript
+# ------------------------------
 *.tsbuildinfo
+
+# ------------------------------
+# Environment Variables
+# ------------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------------
+# OS / Editor Files
+# ------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.iml
+
+# ------------------------------
+# Supabase (local dev)
+# ------------------------------
+supabase/.branches
+supabase/.temp
+supabase/.env
+supabase/.env.local
+supabase/docker
+supabase/studio
+supabase/storage
+supabase/.cache
+
+# ------------------------------
+# Misc
+# ------------------------------
+tmp/
+.cache/
