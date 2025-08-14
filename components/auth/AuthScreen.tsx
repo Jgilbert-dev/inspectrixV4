@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { View, StyleSheet } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { LoginScreen } from "./LoginScreen";
-import { RegisterScreen } from "./RegisterScreen";
+import LoginScreen from "./LoginScreen";
+import RegisterScreen from "./RegisterScreen";
 
 type AuthMode = "login" | "register";
 
